@@ -1,4 +1,4 @@
-const core = require('./app');
+const core = require('./core');
 const electron = require('electron');
 
 const { app, BrowserWindow } = electron;
