@@ -1,0 +1,45 @@
+{
+  "name": "smart_mirror",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "^0.0.1-security",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.5.2",
+    "react-dom": "^17.0.2",
+    "react-router": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "socket.io": "^4.0.0",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "server": "node js/server.js",
+    "electron": "DISPLAY=\"${DISPLAY:=:0}\" ./node_modules/.bin/electron js/electron.js",
+    "build": "react-scripts build",
+    "test": "DISPLAY=\"${DISPLAY:=:0}\" ./node_modules/.bin/electron js/test.js",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "electron": "^12.0.2"
+  }
+}
