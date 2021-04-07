@@ -22,7 +22,7 @@ const createWindow = ()=>{
 
 
     let mainWindow = new BrowserWindow(electronOptions);
-    mainWindow.loadURL("http://localhost:3000");
+    mainWindow.loadURL("http://localhost:5999");
 
     mainWindow.on("closed",()=>{
         mainWindow=null;

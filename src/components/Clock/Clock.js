@@ -29,10 +29,10 @@ function Clock() {
     return (
         <div className="container clock_widget">
             <div className="dateWeek medium light">
-                {weekday}, {month} {day}, {year}
+                <span className="weekday regular">{weekday},</span>  {month} {day}, {year}
             </div>
             <div className="time light xlarge">
-                {hour + ":" + minute}<span className="seconds medium thin">{second}</span>
+                {hour + ":" + minute} <span className="seconds medium thin">{second}</span>
             </div>
         </div>
     )

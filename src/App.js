@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import Clock from './components/Clock/Clock';
+import CustText from './components/CustomText/custText'
 import './App.css';
 
 function App() {
@@ -16,9 +17,11 @@ function App() {
       
       <div className="region upper third"><div className="container"></div></div>
       
-      <div className="region middle center"><div className="container"><img className="App-logo" src={logo} alt="" srcset=""/></div></div>
+      <div className="region middle center"><div className="container">
+        {/* <img className="App-logo" src={logo} alt="" srcSet=""/> */}
+      </div></div>
       
-      <div className="region lower third"><div className="container"><br/></div></div>
+      <div className="region lower third"><div className="container"><br/><CustText/></div></div>
       
       <div className="region bottom bar">
         <div className="region bottom left"></div>
